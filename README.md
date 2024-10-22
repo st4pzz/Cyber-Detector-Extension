@@ -91,4 +91,4 @@ Este projeto está licenciado sob a [MIT License](https://opensource.org/license
 
 ---
 
-Trabalho desenvolvido por [Seu Nome] como parte da disciplina de Cybersegurança no INSPER.
+Trabalho desenvolvido por Sergio como parte da disciplina de Cybersegurança no INSPER.
