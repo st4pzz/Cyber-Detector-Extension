@@ -1,15 +1,87 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Browser Privacy Extension</title>
+  <title>Cyber Detector Extension</title>
   <style>
-    body { font-family: Arial, sans-serif; width: 200px; }
+    body {
+      font-family: Arial, sans-serif;
+      width: 300px;
+      padding: 15px;
+      background-color: #f0f8ff;
+      color: #004080; 
+    }
+    details {
+      margin-bottom: 10px;
+    }
+    summary {
+      font-size: 18px;
+      font-weight: bold;
+      color: #00264d;
+      cursor: pointer;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    li {
+      font-size: 14px;
+      margin: 5px 0;
+      padding: 5px;
+      border: 1px solid #004080;
+      border-radius: 5px; 
+      background-color: #e6f2ff; 
+    }
+    #privacy-score {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 15px;
+    }
   </style>
 </head>
 <body>
-  <h2>Privacy Status</h2>
-  <div id="cookies-info">Cookies: Carregando...</div>
-  <div id="storage-info">Armazenamento: Carregando...</div>
+  <h1>Cyber Detector</h1>
+
+  <details>
+    <summary>Conexoes de Terceira Parte</summary>
+    <ul id="connections-info">
+      <li>Carregando...</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>Cookies Detectados</summary>
+    <ul id="cookies-info">
+      <li>Carregando...</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>Ameacas de Hijacking</summary>
+    <ul id="hijacking-info">
+      <li>Carregando...</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>Dados no Local Storage</summary>
+    <ul id="local-storage-info">
+      <li>Carregando...</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>Dados no Session Storage</summary>
+    <ul id="session-storage-info">
+      <li>Carregando...</li>
+    </ul>
+  </details>
+
+  <h2>Canvas Fingerprinting</h2>
+  <div id="canvas-fingerprint-status">Carregando...</div>
+
+  <h2>Pontuacao de Privacidade</h2>
+  <div id="privacy-score">Calculando...</div>
+
   <script src="popup.js"></script>
 </body>
 </html>

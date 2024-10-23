@@ -1,33 +1,31 @@
 {
-    "manifest_version": 2,
-    "name": "Browser Privacy Extension",
-    "version": "1.0",
-    "description": "A Firefox extension to detect privacy violations and attacks.",
-    "permissions": [
-      "webRequest",
-      "webRequestBlocking",
-      "cookies",
-      "storage",
-      "tabs",
-      "http://*/*",
-      "https://*/*"
-    ],
-    "background": {
-      "scripts": ["background.js"],
-      "persistent": true
-    },
-    "browser_action": {
-      "default_popup": "popup.html",
-      "default_icon": "icon.png"
-    },
-    "icons": {
-      "48": "icon.png"
-    },
-    "content_scripts": [
-      {
-        "matches": ["<all_urls>"],
-        "js": ["content.js"]
-      }
-    ]
-  }
-  
+  "manifest_version": 2,
+  "name": "Cyber Detector Extension",
+  "version": "1.0",
+  "description": "A Firefox extension to detect privacy violations and attacks.",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "cookies",
+    "storage",
+    "tabs",
+    "<all_urls>"
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "48": "icon.png"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}

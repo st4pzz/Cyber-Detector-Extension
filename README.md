@@ -1,6 +1,6 @@
 
 
-# Browser Privacy Extension
+# Cyber Detector Extension
 
 ## Descrição
 Esta extensão para o navegador Firefox foi desenvolvida como parte de um trabalho de cybersegurança para detecção de ataques e violações de privacidade em clientes web. Ela detecta conexões a domínios de terceira parte, cookies e supercookies, armazenamento de dados HTML5, sincronismo de cookies, hijacking, e canvas fingerprinting. Além disso, a extensão gera uma pontuação de privacidade, indicando se a página visitada respeita a privacidade do usuário.
@@ -24,8 +24,8 @@ Esta extensão para o navegador Firefox foi desenvolvida como parte de um trabal
 ### Passo a Passo
 1. Clone o repositório:
     ```bash
-    git clone https://github.com/seu-usuario/browser-privacy-extension.git
-    cd browser-privacy-extension/extension
+    git clone https://github.com/seu-usuario/Cyber-Detector-Extension.git
+    cd Cyber-Detector-Extension/extension
     ```
 
 2. Abra o Firefox e acesse `about:debugging`.
